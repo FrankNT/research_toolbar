@@ -1,0 +1,54 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context="com.test.myapplication.ItemDetailActivity"
+    tools:ignore="MergeRootFrame">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="false"
+            app:layout_scrollFlags="scroll|snap"
+            app:toolbarId="@+id/toolbar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:background="#183545"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="awfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafwawfweafw"
+                android:layout_below="@+id/detail_toolbar"/>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/item_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Test oonoonoonTest oonoonoonTest oonoonoonTest oonoonoonTest oonoonoonTest oonoonoon"/>
+
+</android.support.design.widget.CoordinatorLayout>
